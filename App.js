@@ -8,6 +8,7 @@ import { styles } from "./styles/styles";
 import Header from "./components/Header";
 import Setup from "./components/Setup";
 import Tnorm from "./components/Tnorm";
+import Snorm from "./components/Snorm";
 
 const alphabets = require("./assets/input/input.json");
 
@@ -65,6 +66,7 @@ export default function App() {
           setMembershipValues={setMembershipValues}
         />
         <Tnorm membershipValues={membershipValues} />
+        <Snorm membershipValues={membershipValues} />
       </ScrollView>
     </SafeAreaView>
   );
